@@ -3,54 +3,50 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
+import Slide from "../components/swiper"
 
-function Projcts(){
+function Projcts() {
+    return (
 
-    return(
-        <div className="swiper">
-    
-    <Swiper
-                slidesPerView={1}
-                spaceBetween={30}
+        <>
+        
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={0}
                 loop={true}
-                pagination={{
-                clickable: true,
-                }}
+                pagination={{clickable: true,}}
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide className="slides">
-                    <div className="content">
-                        <img src="https://via.placeholder.com/250x150/fff" alt="" srcset="" />
-                        <h2>account name</h2>
-                        <hr />
-                        <p>content content content content content content content content </p>
-                    </div>
+
+                <SwiperSlide className="num">
+                    <Slide src="https://via.placeholder.com/250X140" alt="first" name="projct1" word="first projct" />
                 </SwiperSlide>
 
-
-                <SwiperSlide className="slides">
-                    <div className="content">
-                        <img src="https://via.placeholder.com/250x150/efff" alt="" srcset="" />
-                        <h2>account name</h2>
-                        <hr />
-                        <p>content content content content content content content content </p>
-                    </div>
+                <SwiperSlide className="num">
+                    <Slide src="https://via.placeholder.com/250X140" alt="socund" name="projct2" word="socund projct" />
                 </SwiperSlide>
 
-
-                <SwiperSlide className="slides">
-                    <div className="content">
-                        <img src="https://via.placeholder.com/250x150/efdd" alt="" srcset="" />
-                        <h2>account name</h2>
-                        <hr />
-                        <p>content content content content content content content content </p>
-                    </div>
+                <SwiperSlide className="num">
+                    <Slide src="https://via.placeholder.com/250X140" alt="therd" name="projct3" word="therd projct" />
                 </SwiperSlide>
 
+                <SwiperSlide className="num">
+                    <Slide src="https://via.placeholder.com/250X140" alt="first" name="projct1" word="first projct" />
+                </SwiperSlide>
+
+                <SwiperSlide className="num">
+                    <Slide src="https://via.placeholder.com/250X140" alt="socund" name="projct2" word="socund projct" />
+                </SwiperSlide>
+
+                <SwiperSlide className="num">
+                    <Slide src="https://via.placeholder.com/250X140" alt="therd" name="projct3" word="therd projct" />
+                </SwiperSlide>
             </Swiper>
-        </div>
-    )
+            </>
+    );
+
 }
-export default Projcts
+
+export default Projcts;
