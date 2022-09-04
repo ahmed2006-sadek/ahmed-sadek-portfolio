@@ -8,7 +8,6 @@ function Header(){
                     <a href="/"><li><span>Home</span></li></a>
                     <a href="/AboutMe"><li><span>About me</span></li></a>
                     <a href="/CallMe"><li><span>Call me</span></li></a>
-                    <a href="/SocialMedia"><li><span>Social media</span></li></a>
                     <a href="/Projcts"><li><span>Projcts</span></li></a>
                 </ul>
             </nav>

@@ -4,6 +4,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 import Slide from "../components/swiper"
+import rock from "../img/rock.png"
+import space from "../img/space.png"
 
 function Projcts() {
     return (
@@ -11,7 +13,7 @@ function Projcts() {
         <>
         
             <Swiper
-                slidesPerView={3}
+                slidesPerView={1}
                 spaceBetween={0}
                 loop={true}
                 pagination={{clickable: true,}}
@@ -21,28 +23,13 @@ function Projcts() {
             >
 
                 <SwiperSlide className="num">
-                    <Slide src="https://via.placeholder.com/250X140" alt="first" name="projct1" word="first projct" />
+                    <Slide src={rock} alt="Rockai Dev" name="Rockai Dev" word="worked at Rockai Dev portfolio" lenk="https://rockai-dev.herokuapp.com/" />
                 </SwiperSlide>
 
                 <SwiperSlide className="num">
-                    <Slide src="https://via.placeholder.com/250X140" alt="socund" name="projct2" word="socund projct" />
+                    <Slide src={space} alt="space youth fotum" name="space youth forum" word="worked at space youth forum" lenk="https://space-youth-forum.herokuapp.com/Home" />
                 </SwiperSlide>
 
-                <SwiperSlide className="num">
-                    <Slide src="https://via.placeholder.com/250X140" alt="therd" name="projct3" word="therd projct" />
-                </SwiperSlide>
-
-                <SwiperSlide className="num">
-                    <Slide src="https://via.placeholder.com/250X140" alt="first" name="projct1" word="first projct" />
-                </SwiperSlide>
-
-                <SwiperSlide className="num">
-                    <Slide src="https://via.placeholder.com/250X140" alt="socund" name="projct2" word="socund projct" />
-                </SwiperSlide>
-
-                <SwiperSlide className="num">
-                    <Slide src="https://via.placeholder.com/250X140" alt="therd" name="projct3" word="therd projct" />
-                </SwiperSlide>
             </Swiper>
             </>
     );

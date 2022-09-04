@@ -7,6 +7,7 @@ function Swiper(slide){
             <h2>{slide.name}</h2>
             <hr />
             <p>{slide.word}</p>
+            <a href={slide.lenk}><span>previw</span></a>
         </div>
     </div>
     )

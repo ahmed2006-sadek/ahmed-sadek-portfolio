@@ -1,10 +1,10 @@
-import myImg from "../img/img1.png"
+import myImg from "../img/myImg.jpg"
 
 function Home(){
     return(
         <>
             <div className="home">
-                <img src={myImg} alt="my img" />
+                <img src={myImg} alt="my photo" />
                 <h2>
                     My name is Ahmed Sadek, and this is my portfolio<a href="/AboutMe"><span>About me</span></a>
                 </h2>
