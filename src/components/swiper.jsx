@@ -3,9 +3,8 @@ function Swiper(slide){
     return(
     <div className="slides">
         <div className="content">
-        <img src={slide.src} alt={slide.alt} />
+        <img className="pro" src={slide.src} alt={slide.alt} />
             <h2>{slide.name}</h2>
-            <hr />
             <p>{slide.word}</p>
             <a href={slide.lenk}><span>previw</span></a>
         </div>
